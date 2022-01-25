@@ -2,14 +2,15 @@
 
 1. Vaihe: Java, JRE (done) , SDK (done)
 
-Kirjuduimme sisään Puttyn avulla opettajan luomalle palvelimelle. Javaa ei löytynyt oletuksena palvelimelta, joten lähdimme asentamaan Javaa `sudo apt install default-jdk` -komennolla. Tämän jälkeen tuli ilmoitus, että se on jo manuaalisesti asennettu.
+Kirjuduimme sisään Puttyn avulla opettajan luomalle palvelimelle. Javaa ei löytynyt oletuksena palvelimelta, joten lähdimme asentamaan Javaa `sudo apt install default-jdk` -komennolla. Tämän jälkeen tuli ilmoitus, että se on jo manuaalisesti asennettu. Laitettuamme komennon `java --version` komentorivi näytti, että JRE ja JDK löytyvät. Ohessa kuva komentoriviltä:
 
-Seuraavaksi laitoimme `sudo add-apt-repository ppa:webupd8team/java` -komennon. Tämän jälkeen teimme `sudo apt update` -komennon. Tämän jälkeen laitoimme `sudo apt install oracle-java11-installer` -komennon, joka johti virheilmoitukseen: "paketti on vanhentunut". Yritimmme myös noudattaa toista ohjetta, mutta päädyimme samaan ongelmaan. 
-
-Tämän jälkeen käytimme stackoverflow:ssa olevaa ohjetta ja menimme `sudoedit /etc/apt/sources.list` -komennolla muokkaamaan sources.list -tiedostoa. Tiedostosta ei löytynyt packages.ros.org/ros/ -tiedostoa. Päätimme edetä seuraavaan vaiheeseen, koska emme saaneet asennettua javaa.
+![unknown](https://user-images.githubusercontent.com/77921212/150959410-e77ee360-18cc-4142-a6fe-c674796a66f0.png)
 
 
 
+
+<br />
+<br />
 
 2. Vaihe: POSTGIS (lähde: https://www.vultr.com/docs/install-the-postgis-extension-for-postgresql-on-ubuntu-linux/) 
 
@@ -23,9 +24,12 @@ Sitten loimme yhteyden uuteen tietokantaan komennolla: `$ psql -d cgi_db`. Pää
 
 Kokeilimme lopuksi PostGIS laajennusta komennolla: `my_db=# SELECT PostGIS_version();`. 
 
+![fdab4154-07ba-46dc-833f-660c90b0cfaf](https://user-images.githubusercontent.com/77921212/150959632-dc90b6ff-88b9-465d-9efa-95ee3e6e3c95.jpg)
 
 
 
+<br />
+<br />
 
 
 3. Vaihe (http://geoserver.org/release/stable/ ja https://medium.com/random-gis-talks/installing-geoserver-binary%EF%B8%8F-on-ubuntu-18-04-using-terminal-ff9429ab47fa)
