@@ -19,7 +19,7 @@ Kirjuduimme sisään Puttyn avulla opettajan luomalle palvelimelle. Javaa ei lö
 
 Seuraavaksi lähdimme asentamaan postgresql:n komennolla `$ sudo apt -y install postgresql-12 postgresql-client-12`. Sitten asensimme PostGIS:n komennolla `$ sudo apt install postgis postgresql-12-postgis-3`. Lopuksi asensimme vielä tarvittavat paketit komennolla: ```$ sudo apt-get install postgresql-12-postgis-3-scripts```. 
 
-Tämän jälkeen kirjauduimme superkäyttäjälle komennolla `sudo su - postgres`. Seuraavaksi loimme uuden käyttäjän komennolla `createuser cgiuser1`. Sitten asetimme salasanan komennolla `$ psql -c "alter user cgiuser1 with password 'yourPassword'`. Tämän jälkeen lähdimme luomaan uutta tietokantaa komennolla `$ createdb cgi_db -O cgiuser1`. 
+Tämän jälkeen kirjauduimme superkäyttäjälle komennolla `sudo su - postgres`. Seuraavaksi loimme uuden käyttäjän komennolla `createuser cgiuser1`. Sitten asetimme salasanan komennolla `$ psql -c "alter user cgiuser1 with password 'yourPassword'"`. Tämän jälkeen lähdimme luomaan uutta tietokantaa komennolla `$ createdb cgi_db -O cgiuser1`. 
 
 Loimme vielä yhteyden uuteen tietokantaan komennolla: `$ psql -d cgi_db`. Pääsimme onnistuneesti sisään tietokantaan. Sitten lisäsimme PostGIS laajennuksen tietokantaan komennolla: ```cgi_db=# CREATE EXTENSION postgis;```
 
