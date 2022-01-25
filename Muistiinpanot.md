@@ -1,8 +1,10 @@
 # Muistiinpanot
 
-1. Vaihe: Java, JRE, SDK
+1. Vaihe: Java, JRE (done) , SDK (done)
 
-Kirjuduimme sisään Puttyn avulla opettajan luomalle palvelimelle. Javaa ei löytynyt oletuksena palvelimelta, joten lähdimme asentamaan Javaaa `sudo apt install default-jdk ` -komennolla. Tämän jälkeen tuli ilmoitus, että se on jo manuaalisesti asennettu. Seuraavaksi laitoimme `sudo add-apt-repository ppa:webupd8team/java` -komennon. Tämän jälkeen teimme `sudo apt update` -komennon. Tämän jälkeen laitoimme `sudo apt install oracle-java11-installer` -komennon, joka johti virheilmoitukseen: "paketti on vanhentunut". Yritimmme myös noudattaa toista ohjetta, mutta päädyimme samaan ongelmaan. 
+Kirjuduimme sisään Puttyn avulla opettajan luomalle palvelimelle. Javaa ei löytynyt oletuksena palvelimelta, joten lähdimme asentamaan Javaa `sudo apt install default-jdk` -komennolla. Tämän jälkeen tuli ilmoitus, että se on jo manuaalisesti asennettu.
+
+Seuraavaksi laitoimme `sudo add-apt-repository ppa:webupd8team/java` -komennon. Tämän jälkeen teimme `sudo apt update` -komennon. Tämän jälkeen laitoimme `sudo apt install oracle-java11-installer` -komennon, joka johti virheilmoitukseen: "paketti on vanhentunut". Yritimmme myös noudattaa toista ohjetta, mutta päädyimme samaan ongelmaan. 
 
 Tämän jälkeen käytimme stackoverflow:ssa olevaa ohjetta ja menimme `sudoedit /etc/apt/sources.list` -komennolla muokkaamaan sources.list -tiedostoa. Tiedostosta ei löytynyt packages.ros.org/ros/ -tiedostoa. Päätimme edetä seuraavaan vaiheeseen, koska emme saaneet asennettua javaa.
 
