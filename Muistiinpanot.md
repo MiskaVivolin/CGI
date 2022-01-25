@@ -46,6 +46,10 @@ Muutimme oikeuksia, jotta käyttäjälle tulee oikeudet tiedostoon: `sudo chown 
 
 ![unknown](https://user-images.githubusercontent.com/77921212/150963741-37153174-41f2-4549-a8e1-f9a7e5be7071.png)
 
+<br />
+<br />
+
+
 ### 4. Käytetyt komennot
 
 ```
