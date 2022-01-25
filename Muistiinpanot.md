@@ -85,11 +85,11 @@ sudo su - postgres
 ```
 
 ```
-createuser cgiuser1
+createuser exampleuser
 ```
 
 ```
-psql -c "alter user exampleuser with password 'yourPassword'
+psql -c "alter user exampleuser with password 'yourPassword'"
 ```
 
 ```
@@ -97,7 +97,7 @@ createdb my_db -O exampleuser
 ```
 
 ```
- psql -d cgi_db
+psql -d my_db
 ```
 
 ```
